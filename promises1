@@ -1,0 +1,21 @@
+async function dadmakespromise(){
+    const a=1;
+    const dadspromise = await new Promise((resolve, reject) => {
+        new setTimeout([] => {
+            var salaryCredited=true;
+            var salary=100000
+            var costefps5=40000
+            var costefps4=30000
+
+            if(salaryCredited === true && salary > costefps5){
+                resolve('buy him a ps3')
+            }else if (salaryCredited === true && salary > costefps4){
+                reject('buy him a ps4')
+            }else{
+                reject('sorry son, i will try next month')
+            }
+        }, 1000)
+    })
+    
+    console.log(dadspromise);
+}
